@@ -1,29 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Website Placeholder</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 150px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* Style for collapsible sections */
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
 
-    h1 {
-      font-size: 36px;
-    }
+        .collapsible:hover {
+            background-color: #ddd;
+        }
 
-    p {
-      font-size: 18px;
-      color: #888;
-    }
-  </style>
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
-  <h1>Bienvenido a Onkover!</h1>
-  <p>La pagina web esta en construcción. Pronto tendra toda la información acerca de Onkover.</p>
-  <img src="Onkover Logo B Full JPG.jpg"  width="500" height="500"  alt="Logo Onkover">
-  <a href="https://www.onkover.com">Onkover</a>
+    <!-- Contact Information -->
+    <button class="collapsible">Contact Information</button>
+    <div class="content">
+        <p>Your contact information goes here.</p>
+    </div>
+
+    <!-- Main Categories -->
+    <!-- Work Experience -->
+    <button class="collapsible">Work Experience</button>
+    <div class="content">
+        <p>Your work experience details go here.</p>
+    </div>
+
+    <!-- Education -->
+    <button class="collapsible">Education</button>
+    <div class="content">
+        <p>Your education details go here.</p>
+    </div>
+
+    <!-- Continuing Education -->
+    <button class="collapsible">Continuing Education</button>
+    <div class="content">
+        <p>Your continuing education details go here.</p>
+    </div>
+
+    <!-- Volunteering -->
+    <button class="collapsible">Volunteering</button>
+    <div class="content">
+        <p>Your volunteering details go here.</p>
+    </div>
+
+    <!-- Projects, Studies & Investigations -->
+    <button class="collapsible">Projects, Studies & Investigations</button>
+    <div class="content">
+        <p>Your project, study, and investigation details go here.</p>
+    </div>
+
+    <!-- Secondary Categories -->
+    <!-- Languages -->
+    <button class="collapsible">Languages</button>
+    <div class="content">
+        <p>Your language skills go here.</p>
+    </div>
+
+    <!-- Software Expertise -->
+    <button class="collapsible">Software Expertise</button>
+    <div class="content">
+        <p>Your software expertise details go here.</p>
+    </div>
+
+    <!-- Soft Skills -->
+    <button class="collapsible">Soft Skills</button>
+    <div class="content">
+        <p>Your soft skills go here.</p>
+    </div>
+
+    <!-- References -->
+    <button class="collapsible">References</button>
+    <div class="content">
+        <p>Your references go here.</p>
+    </div>
+
+    <script>
+        // Add JavaScript to toggle collapsible sections
+        var coll = document.querySelectorAll(".collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
