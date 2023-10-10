@@ -7,8 +7,8 @@
     <style>
         /* Style for collapsible sections */
         .collapsible {
-            background-color: #f1f1f1;
-            color: #333;
+            background-color: #082600;
+            color: #fff;
             cursor: pointer;
             padding: 18px;
             width: 100%;
@@ -20,7 +20,7 @@
         }
 
         .collapsible:hover {
-            background-color: #ddd;
+            background-color: #262626;
         }
 
         .content {
@@ -28,16 +28,17 @@
             display: none;
             overflow: hidden;
             font-size: 14px;
-            background-color: #f1f1f1;
+            background-color: #082600; /* Dark background */
+            color: #fff; /* Light font color */
         }
 
         /* Style for the header */
         .header {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #082600; /* Dark background */
             font-size: 18px;
-            color: #fff;
+            color: #fff; /* Light font color */
         }
 
         .name {
@@ -71,22 +72,21 @@
 
         /* Style for the navbar */
         .navbar {
-            background-color: #333;
+            background-color: #082600; /* Dark background */
             overflow: hidden;
         }
 
         .navbar a {
             float: left;
             font-size: 24px;
-            color: white;
+            color: #fff; /* Light font color */
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #26DA00;
         }
     </style>
 </head>
@@ -107,17 +107,8 @@
         <p>Industrial Engineer</p>
     </div>
 
-    <!-- Contact Information -->
-    <button class="collapsible" id="contact">Contact Information</button>
-    <div class="content">
-        <p><strong>Location:</strong> Barranquilla, Colombia</p>
-        <p><strong>Phone Number:</strong> +57 3215171312</p>
-        <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
-        <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
-        <p><strong>Personal Website:</strong> <a href="https://davidramirezhn.github.io/" target="_blank">Personal Website</a></p>
-    </div>
-
     <!-- Education -->
+    <hr>
     <button class="collapsible" id="education">Education</button>
     <div class="content">
         <div class="job-details">
@@ -140,6 +131,7 @@
     </div>
 
     <!-- Work Experience -->
+    <hr>
     <button class="collapsible" id="workexperience">Work Experience</button>
     <div class="content">
         <!-- Job 1 -->
@@ -181,23 +173,36 @@
     </div>
 
     <!-- Continuing Education -->
+    <hr>
     <button class="collapsible" id="conteducation">Continuing Education</button>
     <div class="content">
         <!-- Add Continuing Education content here -->
     </div>
 
     <!-- Projects -->
+    <hr>
     <button class="collapsible" id="projects">Projects</button>
     <div class="content">
         <!-- Add Projects content here -->
     </div>
 
     <!-- Volunteering -->
+    <hr>
     <button class="collapsible" id="volunteering">Volunteering</button>
     <div class="content">
         <!-- Add Volunteering content here -->
     </div>
 
+        <!-- Contact Information -->
+    <hr>
+    <button class="collapsible" id="contact">Contact Information</button>
+    <div class="content">
+        <p><strong>Location:</strong> Barranquilla, Colombia</p>
+        <p><strong>Phone Number:</strong> +57 3215171312</p>
+        <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
+        <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
+        <p><strong>Personal Website:</strong> <a href="https://davidramirezhn.github.io/" target="_blank">Personal Website</a></p>
+    </div>
     <script>
         // Add JavaScript to toggle collapsible sections
         var coll = document.querySelectorAll(".collapsible");
@@ -214,9 +219,6 @@
                 }
             });
         }
-    </script>
-</body>
-</html>
     </script>
 </body>
 </html>
