@@ -60,15 +60,15 @@
         .job-title {
             flex: 4;
             text-align: left;
-            font-size: 90%
+            font-size: 90%;
         }
 
         .job-info {
             flex: 1;
             text-align: right;
-            font-size: 70%
+            font-size: 70%;
         }
-        
+
         /* Style for the navbar */
         .navbar {
             background-color: #333;
@@ -91,28 +91,56 @@
     </style>
 </head>
 <body>
-        <!-- Navbar -->
+    <!-- Navbar -->
     <div class="navbar">
         <a href="#about">About Me</a>
         <a href="#workexperience">Work Experience</a>
         <a href="#education">Education</a>
         <a href="#conteducation">Continuing Education</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#volunteering">Volunteering</a>
         <a href="#contact">Contact</a>
     </div>
     <!-- Header -->
-    <div class="header">
+    <div class="header" id="about">
         <div class="name">David Jose Ramirez Hennessey</div>
         <p>Industrial Engineer</p>
     </div>
 
+    <!-- Contact Information -->
+    <button class="collapsible" id="contact">Contact Information</button>
+    <div class="content">
+        <p><strong>Location:</strong> Barranquilla, Colombia</p>
+        <p><strong>Phone Number:</strong> +57 3215171312</p>
+        <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
+        <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
+        <p><strong>Personal Website:</strong> <a href="https://davidramirezhn.github.io/" target="_blank">Personal Website</a></p>
+    </div>
 
+    <!-- Education -->
+    <button class="collapsible" id="education">Education</button>
+    <div class="content">
+        <div class="job-details">
+            <div class="job-title">
+                <button class="collapsible"> - BSc Industrial Engineer @ <strong>Universidad del Norte</strong></button>
+                <div class="content">
+                    <p><strong>Location:</strong> Barranquilla, Colombia</p>
+                    <p><strong>Description:</strong></p>
+                    <ul>
+                        <li>Received a merit-based scholarship for the full tuition of the undergraduate degree.</li>
+                        <li>Learned the fundamentals of industrial engineering, gaining proficiency in the use of tools such as simulation software and statistical analysis.</li>
+                        <li>Participated as an active member of IISE student group for over 2 years.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job-info">
+                <p>07/18 - 06/23</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Work Experience -->
-    <button class="collapsible">Work Experience</button>
-    id="workexperience"
+    <button class="collapsible" id="workexperience">Work Experience</button>
     <div class="content">
         <!-- Job 1 -->
         <div class="job-details">
@@ -147,42 +175,29 @@
                 </div>
             </div>
             <div class="job-info">
-                <p> 01/23 - 07/23</p>
+                <p>01/23 - 07/23</p>
             </div>
         </div>
     </div>
-    <!-- Education -->
-    <button class="collapsible">Education</button>
-    <div id="education">
+
+    <!-- Continuing Education -->
+    <button class="collapsible" id="conteducation">Continuing Education</button>
     <div class="content">
-        <div class="job-details">
-            <div class="job-title">
-                <button class="collapsible"> - BSc Industrial Engineer @ <strong>Universidad del Norte</strong></button>
-                <div class="content">
-                    <p><strong>Location:</strong> Barranquilla, Colombia</p>
-                    <p><strong>Description:</strong></p>
-                    <ul>
-                        <li>Received a merit-based scholarship for the full tuition of the undergraduate degree.</li>
-                        <li>Learned the fundamentals of industrial engineering, gaining proficiency in the use of tools such as simulation software and statistical analysis.</li>
-                        <li>Participated as an active member of IISE student group for over 2 years.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="job-info">
-                <p>07/18 - 06/23</p>
-            </div>
+        <!-- Add Continuing Education content here -->
     </div>
-    </div>
-        <!-- Contact Information -->
-    <button class="collapsible">Contact Information</button>
-    id="contact"
+
+    <!-- Projects -->
+    <button class="collapsible" id="projects">Projects</button>
     <div class="content">
-        <p><strong>Location:</strong> Barranquilla, Colombia</p>
-        <p><strong>Phone Number:</strong> +57 3215171312</p>
-        <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
-        <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
-        <p><strong>Personal Website:</strong> <a href="https://davidramirezhn.github.io/" target="_blank">Personal Website</a></p>
+        <!-- Add Projects content here -->
     </div>
+
+    <!-- Volunteering -->
+    <button class="collapsible" id="volunteering">Volunteering</button>
+    <div class="content">
+        <!-- Add Volunteering content here -->
+    </div>
+
     <script>
         // Add JavaScript to toggle collapsible sections
         var coll = document.querySelectorAll(".collapsible");
