@@ -73,29 +73,44 @@
             text-align: right;
             font-size: 70%;
         }
-        .navbar {
-    background-color: #0f0f0f; /* Dark background */
+/* Style for the navbar */
+.navbar {
+    background-color: #082600; /* Dark background */
     overflow: hidden;
     text-align: right; /* Align text to the right */
     margin: 0; /* Remove margins */
     padding: 0; /* Remove padding */
 }
-    
-    /* Style for navbar links */
+
+/* Style for navbar links */
+.navbar a {
+    float: left;
+    font-size: 18px; /* Default font size for larger screens */
+    color: #fff; /* Light font color */
+    text-align: center;
+    padding: 14px 8px; /* Reduce vertical padding */
+    text-decoration: none;
+    position: relative; /* Required for the vertical lines */
+}
+
+/* Add vertical lines */
+.navbar a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px; /* Width of the vertical line */
+    background-color: #fff; /* Color of the vertical line */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 600px) {
     .navbar a {
-        float: left;
-        font-size: 18px; /* Default font size for larger screens */
-        color: #fff; /* Light font color */
-        text-align: center;
-        padding: 14px 8px;
-        text-decoration: none;
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px 6px; /* Further reduce vertical padding */
     }
-    
-    /* Media query for smaller screens (e.g., mobile devices) */
-    @media screen and (max-width: device-width) {
-        .navbar a {
-            font-size: 12px; /* Adjust font size for smaller screens */
-            padding: 10px 4px; /* Adjust padding for smaller screens */
+}
     </style>
 </head>
 <body>
