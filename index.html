@@ -73,26 +73,27 @@
             text-align: right;
             font-size: 70%;
         }
-
-        /* Style for the navbar */
         .navbar {
-            background-color: #0f0f0f; /* Dark background */
-            overflow: hidden;
-            text-align: right; /* Align text to the right */
-        }
-
+    background-color: #0f0f0f; /* Dark background */
+    overflow: hidden;
+    text-align: right; /* Align text to the right */
+}
+    
+    /* Style for navbar links */
+    .navbar a {
+        float: left;
+        font-size: 18px; /* Default font size for larger screens */
+        color: #fff; /* Light font color */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Media query for smaller screens (e.g., mobile devices) */
+    @media screen and (max-width: 600px) {
         .navbar a {
-            float: left;
-            font-size: 24px;
-            color: #fff; /* Light font color */
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #f26A00;
-        }
+            font-size: 16px; /* Adjust font size for smaller screens */
+            padding: 10px 12px; /* Adjust padding for smaller screens */
     </style>
 </head>
 <body>
@@ -206,7 +207,6 @@
         <p><strong>Phone Number:</strong> +57 3215171312</p>
         <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
         <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
-        <p><strong>Personal Website:</strong> <a href="https://davidramirezhn.github.io/" target="_blank">Personal Website</a></p>
     </div>
     <script>
         // Add JavaScript to toggle collapsible sections
