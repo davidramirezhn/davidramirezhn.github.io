@@ -2,15 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=300px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Jose Ramirez Hennessey - Resume</title>
     <style>
-        /* Style for the body */
+        /* Body style */
         body {
             background: linear-gradient(to bottom, #0f0f0f0f 10%, #444444 10%, #444444 100%);
-            margin: 0; /* Remove margins */
-            padding: 0; /* Remove padding */
-            background-color: #444444; /* Dark background for the entire page */
+            margin: 0;
+            padding: 0;
+            background-color: #444444;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Main container for layout */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Profile container (25% width) */
+        .profile-container {
+            width: 25%;
+            padding: 20px;
+        }
+
+        /* Resume container (75% width) */
+        .resume-container {
+            width: 75%;
+            padding: 20px;
+        }
+
+        /* Header style */
+        .header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 28px;
+        }
+
+        /* Navbar style */
+        .navbar {
+            background-color: #0f0f0f;
+            overflow: hidden;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            padding: 14px 8px;
+        }
+
+        .navbar a::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 1px;
+            height: 60%;
+            background-color: #fff;
+            transform: translateY(-50%);
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                font-size: 10px;
+                padding: 10px 6px;
+            }
         }
         /* Style for collapsible sections */
         .collapsible {
@@ -39,43 +107,12 @@
             color: #f3f6f4; /* Light font color */
         }
 
-        /* Style for the header */
-        .header {
+        /* Footer style */
+        .footer {
             text-align: center;
-            padding: 20px;
-            background-color: #444444; /* Dark background */
-            font-size: 18px;
-            color: #fff; /* Light font color */
-        }
-
-        .name {
-            font-size: 24px;
-        }
-        /* Style for the left column */
-        .left-column {
-            width: 25%;
-            float: left;
-            background-color: #333;
-            color: #fff;
+            background-color: #0f0f0f;
             padding: 20px;
         }
-
-        .left-column img {
-            width: 100%;
-            max-width: 150px;
-            border-radius: 50%;
-        }
-
-        .left-column h2 {
-            font-size: 24px;
-        }
-
-        /* Limit maximum width of content */
-        .resume-container {
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
         /* Two-column layout for job details */
         .job-details {
             display: flex;
@@ -143,59 +180,61 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#workexperience">Experience</a>
-    </div>
-    <!-- Left Column for Profile -->
-    <div class="left-column">
-        <img src="/your-image-path.jpg" alt="Your Profile Picture">
-        <h2>David Jose Ramirez Hennessey</h2>
-        <p>Industrial Engineer</p>
-        <!-- Include your profile information here, e.g., contact details, skills, etc. -->
+        <a href="#workexperience">Work Experience</a>
     </div>
 
-        <!-- Right Column for Resume Content -->
-    <div class="right-column">
-    <!-- Work Experience -->
-    <hr>
-    <button class="collapsible" id="workexperience">Work Experience</button>
-    <div class="content">
-        <!-- Job 1 -->
-        <div class="job-details">
-            <div class="job-title">
-                <button class="collapsible"> - Data Analyst @ <strong>Velozient</strong></button>
-                <div class="content">
-                    <p><strong>Location:</strong> Remote</p>
-                    <p><strong>Job Description:</strong></p>
-                    <ul>
-                        <li>Thrived in a dynamic and fast-paced international contractor role, demonstrating adaptability and flexibility while consistently meeting project milestones and exceeding client expectations playing a pivotal role in enhancing the client implementation and onboarding processes for Hungerrush's cutting-edge product, Ordrai.</li>
-                        <li>Diligently ensured the quality and efficiency of client onboarding, guaranteeing that restaurants seamlessly integrated Ordrai into their operations. Conducted thorough assessments and audits to identify areas for improvement, resulting in a streamlined and enhanced onboarding process.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="job-info">
-                <p>08/23 - Present</p>
-            </div>
+    <!-- Container for the layout -->
+    <div class="container">
+        <!-- Profile container -->
+        <div class="profile-container">
+            <!-- Your profile content goes here -->
+            <div class="name">David Jose Ramirez Hennessey</div>
+            <p>Industrial Engineer</p>
+            <!-- Include your profile information here -->
         </div>
 
-        <!-- Job 2 -->
-        <div class="job-details">
-            <div class="job-title">
-                <button class="collapsible"> - Health & Safety Analyst Intern @ <strong>Transelca S.A.</strong></button>
-                <div class="content">
-                    <p><strong>Location:</strong> Puerto Colombia, Colombia</p>
-                    <p><strong>Job Description:</strong></p>
-                    <ul>
-                        <li>Oversaw the standardization and monitoring of operational controls for contractors, ensuring compliance with regulatory requirements and industry standards.</li>
-                        <li>Conducted thorough OHS audits at electricity substations, systematically evaluating safety protocols, equipment maintenance, and compliance with industry regulations. Assessed potential hazards and recommended corrective actions to mitigate risks effectively.</li>
-                        <li>Designed a comprehensive industry safety course for contractors, covering topics such as hazard identification, risk assessment, and safety protocols.</li>
-                    </ul>
+        <!-- Resume container -->
+        <div class="resume-container">
+            <!-- Work Experience -->
+            <button class="collapsible" id="workexperience">Work Experience</button>
+            <div class="content">
+                <!-- Job 1 -->
+                <div class="job-details">
+                    <div class="job-title">
+                        <button class="collapsible"> - Data Analyst @ <strong>Velozient</strong></button>
+                        <div class="content">
+                            <p><strong>Location:</strong> Remote</p>
+                            <p><strong>Job Description:</strong></p>
+                            <ul>
+                                <li>Thrived in a dynamic and fast-paced international contractor role, demonstrating adaptability and flexibility while consistently meeting project milestones and exceeding client expectations playing a pivotal role in enhancing the client implementation and onboarding processes for Hungerrush's cutting-edge product, Ordrai.</li>
+                                <li>Diligently ensured the quality and efficiency of client onboarding, guaranteeing that restaurants seamlessly integrated Ordrai into their operations. Conducted thorough assessments and audits to identify areas for improvement, resulting in a streamlined and enhanced onboarding process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <p>08/23 - Present</p>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-details">
+                    <div class="job-title">
+                        <button class="collapsible"> - Health & Safety Analyst Intern @ <strong>Transelca S.A.</strong></button>
+                        <div class="content">
+                            <p><strong>Location:</strong> Puerto Colombia, Colombia</p>
+                            <p><strong>Job Description:</strong></p>
+                            <ul>
+                                <li>Oversaw the standardization and monitoring of operational controls for contractors, ensuring compliance with regulatory requirements and industry standards.</li>
+                                <li>Conducted thorough OHS audits at electricity substations, systematically evaluating safety protocols, equipment maintenance, and compliance with industry regulations. Assessed potential hazards and recommended corrective actions to mitigate risks effectively.</li>
+                                <li>Designed a comprehensive industry safety course for contractors, covering topics such as hazard identification, risk assessment, and safety protocols.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <p>01/23 - 07/23</p>
+                    </div>
                 </div>
             </div>
-            <div class="job-info">
-                <p>01/23 - 07/23</p>
-            </div>
-        </div>
-    </div>
     <!-- Education -->
     <hr>
     <button class="collapsible" id="education">Education</button>
@@ -251,11 +290,13 @@
 
         <!-- Clear floating for proper layout -->
     <div class="clearfix"></div>
-    
-    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
-    &copy; 2023 David Jose Ramirez Hennessey - All Rights Reserved
+
 </footer>
-    
+     <!-- Footer for contact information -->
+    <div class="footer">
+        <!-- Your contact information goes here -->
+            &copy; 2023 David Jose Ramirez Hennessey - All Rights Reserved
+    </div>
     <script>
         // Add JavaScript to toggle collapsible sections
         var coll = document.querySelectorAll(".collapsible");
@@ -273,14 +314,6 @@
             });
         }
     </script>
-    <!-- Your HTML content above -->
-    <!-- Navbar -->
-    <div class="navbar">
-        <!-- Your navbar links here -->
-    </div>
-
-    <!-- Your other content here -->
-
     <script>
         // Add JavaScript code here
         document.addEventListener("DOMContentLoaded", function () {
