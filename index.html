@@ -45,38 +45,43 @@
             font-size: 28px;
         }
 
-        /* Navbar style */
+        /* Style for the navbar */
         .navbar {
-            background-color: #0f0f0f;
+            background-color: #0f0f0f; /* Dark background */
             overflow: hidden;
-            text-align: right;
-            margin: 0;
-            padding: 0;
+            text-align: center; /* Align text to the right */
+            margin: 0; /* Remove margins */
+            padding: 0; /* Remove padding */
         }
-
+        
+        /* Style for navbar links */
         .navbar a {
-            font-size: 18px;
-            color: #000000;
+            float: right;
+            font-size: 18px; /* Default font size for larger screens */
+            color: #fff; /* Light font color */
+            text-align: center;
+            padding: 14px 8px; /* Reduce vertical padding */
             text-decoration: none;
-            position: relative;
-            padding: 14px 8px;
+            position: relative; /* Add relative positioning */
         }
-
+        
+        /* Add vertical lines between navbar categories */
         .navbar a::before {
             content: "";
             position: absolute;
-            top: 50%;
-            left: 0;
-            width: 1px;
-            height: 60%;
-            background-color: #fffefc;
-            transform: translateY(-50%);
+            top: 50%; /* Position vertically centered */
+            left: 0; /* Position at the beginning of each link */
+            width: 1px; /* Width of the vertical line */
+            height: 60%; /* Height of the vertical line (adjust as needed) */
+            background-color: #fff; /* Color of the vertical line */
+            transform: translateY(-50%); /* Center the line vertically */
         }
-
+        
+        /* Media query for smaller screens (e.g., mobile devices) */
         @media screen and (max-width: 600px) {
             .navbar a {
-                font-size: 10px;
-                padding: 10px 6px;
+                font-size: 10px; /* Adjust font size for smaller screens */
+                padding: 10px 6px; /* Further reduce vertical padding */
             }
         }
 
@@ -263,7 +268,7 @@
                 if (content.style.display === "block") {
                     content.style.display = "none";
                 } else {
-                    content.style display = "block";
+                    content.style.display = "block";
                 }
             });
         }
