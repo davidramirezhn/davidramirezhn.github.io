@@ -51,6 +51,24 @@
         .name {
             font-size: 24px;
         }
+        /* Style for the left column */
+        .left-column {
+            width: 25%;
+            float: left;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .left-column img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .left-column h2 {
+            font-size: 24px;
+        }
 
         /* Limit maximum width of content */
         .resume-container {
@@ -127,12 +145,16 @@
         <a href="#education">Education</a>
         <a href="#workexperience">Experience</a>
     </div>
-    <!-- Header -->
-    <div class="header" id="about">
-        <div class="name">David Jose Ramirez Hennessey</div>
+    <!-- Left Column for Profile -->
+    <div class="left-column">
+        <img src="/your-image-path.jpg" alt="Your Profile Picture">
+        <h2>David Jose Ramirez Hennessey</h2>
         <p>Industrial Engineer</p>
+        <!-- Include your profile information here, e.g., contact details, skills, etc. -->
     </div>
 
+        <!-- Right Column for Resume Content -->
+    <div class="right-column">
     <!-- Work Experience -->
     <hr>
     <button class="collapsible" id="workexperience">Work Experience</button>
@@ -225,6 +247,15 @@
         <p><strong>Email Address:</strong> <a href="mailto:dramirezhenn@gmail.com">dramirezhenn@gmail.com</a></p>
         <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/davidramirezhn/" target="_blank">LinkedIn</a></p>
     </div>
+        </div>
+
+        <!-- Clear floating for proper layout -->
+    <div class="clearfix"></div>
+    
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
+    &copy; 2023 David Jose Ramirez Hennessey - All Rights Reserved
+</footer>
+    
     <script>
         // Add JavaScript to toggle collapsible sections
         var coll = document.querySelectorAll(".collapsible");
