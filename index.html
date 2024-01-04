@@ -240,7 +240,7 @@
                     <div id="password-section" style="display: none; margin-top: 10px;">
                         <label for="password-input"> Password: </label>
                         <input type="password" id="password-input" style="width: 120px;">
-                        <button onclick="checkPassword()">Submit</button>
+                        <button onclick="submitPassword()">Go to Tracker</button>
                     </div>
                 </div>
             </div>
@@ -282,21 +282,22 @@
     
     <!-- Password -->
     <script>
-        function togglePasswordSection() {
-            document.getElementById("password-section").style.display = "block";
+    function togglePasswordSection() {
+        document.getElementById("password-section").style.display = "block";
+    }
+
+    function submitPassword() {
+        var password = document.getElementById("password-input").value;
+
+        // Replace 'your_secure_password' with the actual secure password
+        if (password === 'admin') {
+            document.getElementById("password-section").style.display = "none";
+            document.getElementById("expense-section").style.display = "block";
+        } else {
+            alert("Incorrect password. Please try again.");
         }
-    
-        function checkPassword() {
-            var password = document.getElementById("password-input").value;
-    
-            // Replace 'your_secure_password' with the actual secure password
-            if (password === 'admin') {
-                document.getElementById("password-section").style.display = "none";
-                document.getElementById("expense-section").style.display = "block";
-            } else {
-                alert("Incorrect password. Please try again.");
-                }
-            }
+    }
+</script>
     </script>
 </body>
 </html>
