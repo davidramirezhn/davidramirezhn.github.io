@@ -228,7 +228,7 @@
                     <div class="job-title">
                         <button class="collapsible"> - Expense Tracker Web App</strong></button>
                         <div class="content">
-                            <p><strong>Used Tools:</strong> Python</p>
+                            <p><strong>Used Tools:</strong> Excel, HTML</p>
                             <p><strong>Description:</strong></p>
                             <ul>
                                 <li>Developed a password protected webapp accessible from this site.</li>
@@ -236,13 +236,11 @@
                         </div>
 
                     </div>
-                    <div class="job-info">
-                        <button onclick="promptForPassword()">Go to APP</button>
-                        <div id="password-section">
+                    <button onclick="togglePasswordSection()">Go to Tracker</button>
+                    <div id="password-section" style="display: none;">
                         <label for="password-input">Enter Password: </label>
                         <input type="password" id="password-input">
                         <button onclick="checkPassword()">Submit</button>
-                        </div>
                     </div>
                 </div>
             </div>
