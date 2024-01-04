@@ -237,14 +237,14 @@
                     </div>
                     <div class="job-info">
                     <button onclick="togglePasswordSection()">Go to Tracker</button>
-                    <div id="password-section" style="display: none;">
+                    <div id="password-section" style="display: none; margin-top: 10px;">
                         <label for="password-input">Enter Password: </label>
                         <input type="password" id="password-input">
                         <button onclick="checkPassword()">Submit</button>
                     </div>
                 </div>
             </div>
-
+            </div>
             <!-- Volunteering -->
             <hr>
             <button class="collapsible" id="volunteering"><strong>Volunteering</strong></button>
@@ -290,7 +290,7 @@
             var password = document.getElementById("password-input").value;
     
             // Replace 'your_secure_password' with the actual secure password
-            if (password === 'your_secure_password') {
+            if (password === 'admin') {
                 document.getElementById("password-section").style.display = "none";
                 document.getElementById("expense-section").style.display = "block";
             } else {
