@@ -226,7 +226,7 @@
                 <!-- Project 1 -->
                     <div class="job-details">
                     <div class="job-title">
-                        <button class="collapsible"> - Expense Tracker </strong></button>
+                        <button class="collapsible"> - Expense Tracker Web App</strong></button>
                         <div class="content">
                             <p><strong>Used Tools:</strong> Python</p>
                             <p><strong>Description:</strong></p>
@@ -234,14 +234,15 @@
                                 <li>Developed a password protected webapp accessible from this site.</li>
                             </ul>
                         </div>
+
+                    </div>
+                    <div class="job-info">
+                        <button onclick="promptForPassword()">Go to APP</button>
                         <div id="password-section">
                         <label for="password-input">Enter Password: </label>
                         <input type="password" id="password-input">
                         <button onclick="checkPassword()">Submit</button>
                         </div>
-                    </div>
-                    <div class="job-info">
-                        <p>APP</p>
                     </div>
                 </div>
             </div>
@@ -283,13 +284,20 @@
     
     <!-- Password -->
     <script>
+        function promptForPassword() {
+            document.getElementById("password-section").style.display = "block";
+        }
+
         function checkPassword() {
             var password = document.getElementById("password-input").value;
 
             // Replace 'your_secure_password' with the actual secure password
-            if (password === 'contraseña') {
+            if (password === 'admin') {
                 document.getElementById("password-section").style.display = "none";
                 document.getElementById("expense-section").style.display = "block";
+
+                // Redirect to another page within the website
+                window.location.href = 'expenses.html';
             } else {
                 alert("Incorrect password. Please try again.");
             }
