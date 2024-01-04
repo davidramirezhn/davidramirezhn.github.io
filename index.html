@@ -282,24 +282,21 @@
     
     <!-- Password -->
     <script>
-        function promptForPassword() {
+        function togglePasswordSection() {
             document.getElementById("password-section").style.display = "block";
         }
-
+    
         function checkPassword() {
             var password = document.getElementById("password-input").value;
-
+    
             // Replace 'your_secure_password' with the actual secure password
-            if (password === 'admin') {
+            if (password === 'your_secure_password') {
                 document.getElementById("password-section").style.display = "none";
                 document.getElementById("expense-section").style.display = "block";
-
-                // Redirect to another page within the website
-                window.location.href = 'expenses.html';
             } else {
                 alert("Incorrect password. Please try again.");
+                }
             }
-        }
     </script>
 </body>
 </html>
