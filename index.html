@@ -236,11 +236,10 @@
                         </div>
                     </div>
                     <div class="job-info">
-                    <div id="password-section" style="display: none; margin-top: 10px;">
-                    <input type="password" id="password-input" style="width: 100px;" placeholder="Enter Password">
-                    <button onclick="togglePasswordSection()">Go to Tracker</button>
+                        <div id="expense-section" class="content">
+                            <button onclick="redirectToTracker()">Go to Tracker</button>
+                        </div>
                     </div>
-                </div>
             </div>
             </div>
             <!-- Volunteering -->
@@ -278,34 +277,12 @@
         });
     </script>
     
-    <!-- Password -->
+    <!-- Expense Tracker -->
 <script>
-    function togglePasswordSection() {
-        var passwordSection = document.getElementById("password-section");
-        var expenseSection = document.getElementById("expense-section");
-
-        if (passwordSection.style.display === "none") {
-            // If password section is hidden, show it
-            passwordSection.style.display = "block";
-        } else {
-            // If password section is visible, hide it and show expense section
-            passwordSection.style.display = "none";
-            expenseSection.style.display = "block";
-            submitPassword();
-        }
+    function redirectToTracker() {
+        // Redirect to the Expense Tracker page
+        window.location.href = "https://davidramirezhn.github.io/expense-tracker";
     }
-
-    function submitPassword() {
-        var password = document.getElementById("password-input").value;
-
-        // Replace 'your_secure_password' with the actual secure password
-        if (password === 'your_secure_password') {
-            document.getElementById("password-section").style.display = "none";
-            document.getElementById("expense-section").style.display = "block";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-    </script>
+</script>
 </body>
 </html>
